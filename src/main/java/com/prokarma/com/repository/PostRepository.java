@@ -14,11 +14,9 @@ import java.util.Date;
 import java.util.List;
 
 @Repository
-public interface PostRepository extends JpaRepository<Post, Long> {
+public interface PostRepository extends CustomRepository<Post, Long> {
 	
 	// AUTHOR ======================================================================================================
-
-
 
 	List<Post> findAllByAuthorFirstName(String first);
 	
